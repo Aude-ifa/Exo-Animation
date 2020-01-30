@@ -80,12 +80,60 @@
 @keyframes ball {
   0% {top: 0px}
   10% {transform: translateY(80px) ;}
-  20% {transform: translateY(20px);}
+  20% {transform: translateY(30px);}
   30% {transform: translateY(80px) ;}
-  40% {transform: translateY(40px) ;}
+  40% {transform: translateY(50px) ;}
   50% {transform: translateY(80px) ;}
   60% {transform: translateY(60px) ;}
   70% {transform: translateY(80px) ;}
   80% {transform: translateY(70px) ;}
   100% {transform: translateY(80px) ;}
+}
+
+/*EXERCICE 4*/
+#flex {
+  display: flex;
+}
+
+.rond {
+  box-sizing: border-box;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  left: 85px;
+  top: 25px;
+  margin-left: 1px;
+}
+
+#flex #run {
+  animation: loader;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+#flex #rdeux {
+  animation: loader;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+#flex #rtrois {
+  animation: loader;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+0% {background-color: white;}
+
+50% {background-color: grey;}
+
+100% {background-color: black;}
+
 }
