@@ -1,0 +1,91 @@
+/*EXERCICE 1 */
+#test {
+  width: 80px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  transition: 3s;
+  float: left;
+}
+
+#test h2 {
+  text-align: center;
+  color: white;
+}
+
+#test:hover {
+  height: 875px;
+}
+
+/*Conteneur exercice 2 à 5 */
+
+.conteneur {
+  height: 250px;
+  width: 400px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 120px;
+  margin-bottom: 40px;
+}
+.conteneur h2 {
+  text-align: center;
+  color: black;
+  margin-top: 30px;
+}
+
+/*EXERCICE 2 */
+
+#carre {
+  position: relative;
+  margin: auto;
+  height: 100px ;
+  width: 100px ;
+  top: 30px;
+  animation: carre;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes carre {
+  0% {background-color: red;}
+  50% {background-color:orange; transform: rotate(720deg);}
+  100% {background-color:yellow;transform: rotate(-360deg);}
+
+}
+
+/*EXERCICE 3 */
+
+#conteneurBall {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  height: 100px ;
+  width: 20px ;
+  border: 1px solid green;
+}
+
+#ball {
+  position: relative;
+  background-color: green;
+  height: 20px ;
+  width: 20px ;
+  border-radius: 50%;
+  animation: ball;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+  0% {top: 0px}
+  10% {transform: translateY(80px) ;}
+  20% {transform: translateY(20px);}
+  30% {transform: translateY(80px) ;}
+  40% {transform: translateY(40px) ;}
+  50% {transform: translateY(80px) ;}
+  60% {transform: translateY(60px) ;}
+  70% {transform: translateY(80px) ;}
+  80% {transform: translateY(70px) ;}
+  100% {transform: translateY(80px) ;}
+}
